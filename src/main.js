@@ -1,7 +1,22 @@
+/*
+ * @Author: your name
+ * @Date: 2021-02-18 14:25:44
+ * @LastEditTime: 2021-02-18 19:33:08
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \vue_shop\src\main.js
+ */
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import './plugins/element.js'
+import './assets/fonts/iconfont.css'
+
+//全局配置axios
+import axios from 'axios'
+Vue.prototype.$http=axios
+//配置请求根路径
+axios.defaults.baseURL='http://127.0.0.1:8888/api/private/v1/'
 
 Vue.config.productionTip = false
 
