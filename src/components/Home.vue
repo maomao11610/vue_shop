@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-02-18 19:47:45
- * @LastEditTime: 2021-02-19 14:42:16
+ * @LastEditTime: 2021-02-19 19:22:28
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\components\Home.vue
@@ -64,7 +64,7 @@
       <!-- 右侧内容主体 -->
       <el-main>
         <!-- 路由占位符 -->
-        <router-view></router-view>
+       <router-view></router-view>
       </el-main>
     </el-container>
   </el-container>
