@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-02-18 14:25:44
- * @LastEditTime: 2021-02-21 12:26:31
+ * @LastEditTime: 2021-02-24 17:10:54
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\router\index.js
@@ -15,6 +15,7 @@ import Welcome from '../components/Welcome.vue'
 import Users from '../components/Users.vue'
 import Rights from '../components/power/Rights.vue'
 import Roles from '../components/power/Roles.vue'
+import Cate from '../components/goods/Cate.vaue'
 Vue.use(VueRouter)
 const routes = [
   {
@@ -45,6 +46,10 @@ const routes = [
      {
       path:'/roles',
       component:Roles
+    },
+    {
+      path:'/categories',
+      component:Cate
     }
      
     ]

@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-02-19 11:31:48
- * @LastEditTime: 2021-02-21 20:58:35
+ * @LastEditTime: 2021-02-21 21:27:42
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\components\user\Users.vue
@@ -56,7 +56,7 @@
           </template>
         </el-table-column>
         <el-table-column label="操作" width="180px">
-          <tamplate slot-scope="scope">
+          <template slot-scope="scope">
             <el-button
               type="primary"
               icon="el-icon-edit"
@@ -82,7 +82,7 @@
                 @click="setRole(cope.row)"
               ></el-button>
             </el-tooltip>
-          </tamplate>
+          </template>
         </el-table-column>
       </el-table>
       <!-- 分页按钮 -->
@@ -168,12 +168,7 @@
         <p>
           分配新角色：
           <el-select v-model="selectedRoleID" placeholder="请选择">
-            <el-option
-              v-for="item in roleList"
-              :key="item.id"
-              :label="item.roleName"
-              :value="item.id"
-            >
+            <el-option v-for="item in roleList" :key="item.id" :label="item.roleName" :value="item.id" >
             </el-option>
           </el-select>
         </p>
@@ -259,7 +254,7 @@ export default {
       // 需要被分配角色的用户信息
       userInfo: {},
       // 所有角色的数据列表
-      rolesList: [],
+      roleList: [],
     //   已经选中的角色ID
       selectedRoleID:''
     }

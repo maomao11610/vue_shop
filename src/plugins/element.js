@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-02-19 17:33:26
- * @LastEditTime: 2021-02-21 20:49:23
+ * @LastEditTime: 2021-02-24 19:04:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\plugins\element.js
@@ -14,7 +14,7 @@ import { Message } from 'element-ui'
 import { Container, Header, Aside, Main } from 'element-ui'
 import { Menu , Submenu , MenuItem } from 'element-ui'
 import { Breadcrumb , BreadcrumbItem , Card, Row , Col , Table, TableColumn, Switch, Tooltip, Pagination, Dialog} from 'element-ui'
-import { MessageBox, Tag , Tree, Select,Option} from 'element-ui';
+import { MessageBox, Tag , Tree, Select,Option, Cascader} from 'element-ui';
 
 Vue.use(Button)
 Vue.use(Form)
@@ -42,5 +42,6 @@ Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Cascader)
 Vue.prototype.$message = Message;
 Vue.prototype.$confirm=MessageBox.confirm
