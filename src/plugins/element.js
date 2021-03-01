@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-02-19 17:33:26
- * @LastEditTime: 2021-02-28 16:37:08
+ * @LastEditTime: 2021-03-01 15:40:07
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\plugins\element.js
@@ -16,6 +16,8 @@ import { Menu , Submenu , MenuItem } from 'element-ui'
 import { Breadcrumb , BreadcrumbItem , Card, Row , Col , Table, TableColumn, Switch, Tooltip, Pagination, Dialog} from 'element-ui'
 import { MessageBox, Tag , Tree, Select,Option, Cascader, Alert, Tabs ,TabPane, Steps, Step , Checkbox, CheckboxGroup, Upload} from 'element-ui';
 
+import Timeline from './timeline/index.js'
+import TimelineItem from './timeline-item/index.js'
 Vue.use(Button)
 Vue.use(Form)
 Vue.use(FormItem)
@@ -51,5 +53,7 @@ Vue.use(Step)
 Vue.use(Checkbox)
 Vue.use(CheckboxGroup)
 Vue.use(Upload)
+Vue.use(Timeline)
+Vue.use(TimelineItem)
 Vue.prototype.$message = Message;
 Vue.prototype.$confirm=MessageBox.confirm
