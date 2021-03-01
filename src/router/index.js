@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-02-18 14:25:44
- * @LastEditTime: 2021-03-01 14:50:01
+ * @LastEditTime: 2021-03-01 15:51:33
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\router\index.js
@@ -20,6 +20,7 @@ import Params from '../components/goods/Params.vue'
 import List from '../components/goods/list.vue'
 import  Add from '../components/goods/Add.vue'
 import Order from '../components/order/Order.vue'
+import Report from '../components/report/report.vue'
 Vue.use(VueRouter)
 const routes = [
   {
@@ -70,6 +71,10 @@ const routes = [
     {
       path:'/orders',
       component:Order
+    },
+    {
+      path:'/reports',
+      component:Report
     }
      
     ]
