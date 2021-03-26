@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-03-01 14:47:39
- * @LastEditTime: 2021-03-01 15:44:33
+ * @LastEditTime: 2021-03-01 17:02:42
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\components\order\Order.vue
@@ -94,7 +94,7 @@
   </div>
 </template>
 <script>
-import cityData from '../citydata.js'
+import cityData from './citydata.js'
 export default {
   data() {
     return {

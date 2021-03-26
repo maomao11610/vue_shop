@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-02-18 14:25:44
- * @LastEditTime: 2021-03-01 15:51:33
+ * @LastEditTime: 2021-03-01 17:03:09
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\router\index.js
@@ -15,7 +15,7 @@ import Welcome from '../components/Welcome.vue'
 import Users from '../components/Users.vue'
 import Rights from '../components/power/Rights.vue'
 import Roles from '../components/power/Roles.vue'
-import Cate from '../components/goods/Cate.vaue'
+import Cate from '../components/goods/Cate.vue'
 import Params from '../components/goods/Params.vue'
 import List from '../components/goods/list.vue'
 import  Add from '../components/goods/Add.vue'

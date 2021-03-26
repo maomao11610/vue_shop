@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-02-27 13:27:52
- * @LastEditTime: 2021-02-27 14:10:07
+ * @LastEditTime: 2021-03-02 17:19:47
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\components\goods\list.vue
@@ -49,9 +49,9 @@
          <el-pagination
       @size-change="handleSizeChange"
       @current-change="handleCurrentChange"
-      :current-page="querInfo.pagenum"
+      :current-page="queryInfo.pagenum"
       :page-sizes="[5, 10, 11,12]"
-      :page-size="querInfo.pagesize"
+      :page-size="queryInfo.pagesize"
       layout="total, sizes, prev, pager, next, jumper"
       :total="total" background>
     </el-pagination>
@@ -62,7 +62,7 @@
 export default {
     data(){
         return {
-            querInfo:{
+            queryInfo:{
                 query:'',
                 pagenum:1,
                 pagesize:10
@@ -77,7 +77,7 @@ this.getGoodsList();
     },
     methods:{
       async  getGoodsList(){
-         const{data:res}  =await this.$http.get('goods',{params:this.querInfo});
+         const{data:res}  =await this.$http.get('goods',{params:this.queryInfo});
          if(res.meta.status!==200){
              return this.$message.error('获取商品列表数据失败')
          };
@@ -86,11 +86,11 @@ this.getGoodsList();
          this.$message.success('获取成功')
         },
         handleSizeChange(newSize){
-            this.querInfo.pagesize=newSize;
+            this.queryInfo.pagesize=newSize;
             this.getGoodsList();
         },
         handleCurrentChange(newPage){
-            this.querInfo.pagenum=newPage;
+            this.queryInfo.pagenum=newPage;
             this.getGoodsList();
         },
       async  removeById(id){

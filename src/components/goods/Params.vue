@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-02-24 19:49:56
- * @LastEditTime: 2021-02-25 10:18:10
+ * @LastEditTime: 2021-03-01 16:29:57
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\components\goods\Params.vue
@@ -219,8 +219,8 @@ addParams(){
         this.getParamsData();
          })
 },
-async showEditDialog(attr_id){
-   const{data:res}= await this.$http.get(`categories/${this.catedId}/attributes/${attr_id}`,{params:{attr_sel:this.activeName}})
+async showEditDialog(attrId){
+   const{data:res}= await this.$http.get(`categories/${this.catedId}/attributes/${attrId}`,{params:{attr_sel:this.activeName}})
    if(res.meta.status!==200){
        return this.$message.error('获取参数新信息失败')
    }
@@ -243,7 +243,7 @@ this.$refs.editForm.validate(async valid=>{
    this.editDialogVisible=false;
 })
 },
-async removeParams(attr_id){
+async removeParams(attrId){
     //根据ID删除
   const confirmResult= await this.$confirm('此操作将永久删除该参数, 是否继续?', '提示', {
           confirmButtonText: '确定',
@@ -254,7 +254,7 @@ async removeParams(attr_id){
             return this.$message.info('已取消删除！')
         }
         //删除
-   const{data:res} =  await  this.$http.delete(` categories/${this.catedId}/attributes/${attr_id}`);
+   const{data:res} =  await  this.$http.delete(` categories/${this.catedId}/attributes/${attrId}`);
    if(res.meta.status!==200){
        return this.$message.error('删除参数失败')
    }
